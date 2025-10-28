@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WhatsApp Form</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .form-container {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .input-field {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .input-field:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.6);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(37, 211, 102, 0.6);
+        }
+        
+        .glow {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-lg mx-auto form-container rounded-2xl p-8 glow">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+                    Contact Us
+                </h1>
+                <p class="text-lg text-gray-400">
+                    Get in touch with us via WhatsApp
+                </p>
+            </div>
+            
+            <form id="contactForm" class="space-y-6">
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fas fa-user text-blue-400"></i>
+                    </div>
+                    <input type="text" id="name" name="name" required 
+                           class="w-full pl-10 pr-4 py-3 rounded-xl input-field text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                           placeholder="Your Name">
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fas fa-envelope text-blue-400"></i>
+                    </div>
+                    <input type="email" id="email" name="email" required 
+                           class="w-full pl-10 pr-4 py-3 rounded-xl input-field text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                           placeholder="Your Email">
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fas fa-phone text-blue-400"></i>
+                    </div>
+                    <input type="tel" id="phone" name="phone" 
+                           class="w-full pl-10 pr-4 py-3 rounded-xl input-field text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                           placeholder="Your Phone (Optional)">
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute top-3 left-3 flex items-start pointer-events-none">
+                        <i class="fas fa-comment text-blue-400 mt-1"></i>
+                    </div>
+                    <textarea id="message" name="message" rows="4" required 
+                              class="w-full pl-10 pr-4 py-3 rounded-xl input-field text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                              placeholder="Your Message"></textarea>
+                </div>
+                
+                <button type="submit" 
+                        class="w-full py-3 px-4 rounded-xl btn-primary text-white font-semibold flex items-center justify-center space-x-2">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Send via WhatsApp</span>
+                </button>
+            </form>
+            
+            <div class="mt-8 pt-6 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-lg font-semibold text-white mb-2">Other ways to reach us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-icon text-blue-400 hover:text-blue-300">
+                                <i class="fab fa-facebook text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon text-pink-500 hover:text-pink-400">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon text-blue-300 hover:text-blue-200">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon text-red-500 hover:text-red-400">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center md:text-right">
+                        <p class="text-sm text-gray-400">Direct WhatsApp</p>
+                        <a href="https://wa.me/8840574997" target="_blank" 
+                           class="inline-flex items-center space-x-2 mt-2 px-4 py-2 rounded-lg btn-whatsapp text-white font-medium">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+91 8840574997</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Format the message for WhatsApp
+            let whatsappMessage = `Hello! I would like to get in touch with you.%0A%0A`;
+            whatsappMessage += `*Name:* ${name}%0A`;
+            whatsappMessage += `*Email:* ${email}%0A`;
+            if (phone) {
+                whatsappMessage += `*Phone:* ${phone}%0A`;
+            }
+            whatsappMessage += `*Message:* ${message}%0A%0A`;
+            whatsappMessage += `Looking forward to your response!`;
+            
+            // Create WhatsApp URL
+            const whatsappURL = `https://wa.me/918840574997?text=${whatsappMessage}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappURL, '_blank');
+            
+            // Optional: Show success message
+            alert('Thank you! Opening WhatsApp to send your message.');
+            
+            // Optional: Reset form
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>
+
+
+plz suggest a readme file of this projects so we can release this code to open source
