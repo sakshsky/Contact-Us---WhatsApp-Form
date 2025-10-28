@@ -131,22 +131,3 @@ UI inspired by Tailwind + modern glassmorphism aesthetics.
 ## 📞 Contact
 
 For questions or collaborations:
-
-* WhatsApp: [wa.me/91XXXXXXXXXX](https://wa.me/91XXXXXXXXXX)
-* Email: [yourname@example.com](mailto:yourname@example.com)
-
-```
-
----
-
-### ✅ Optional Next Steps
-If you plan to open-source it on GitHub:
-- Add a **`LICENSE`** file (MIT is fine)
-- Add **`.gitignore`**
-- Upload a **preview image** (for README visuals)
-- Optionally deploy it via **GitHub Pages** or **Vercel** for a live demo link  
-
----
-
-Would you like me to include a ready-to-use **`LICENSE` (MIT)** file and **`.gitignore`** for your repo as well? I can generate those instantly.
-```
